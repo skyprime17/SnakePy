@@ -52,8 +52,8 @@ def game():
                     board.snake.set_direction(Vector2(0, -1))
                 else:
                     board.snake.set_direction(Vector2(0, 1))
-            if not board.running:
-                running = False
+        if not board.running:
+            running = False
         SCREEN.fill(BG_COLOUR)
         board.update()
         board.draw()
